@@ -29,8 +29,7 @@ public:
 	bool isChunkPlaying(Mix_Chunk* c);
 	bool isChunkPaused(Mix_Chunk* c);
 private:
-	enum HARDWARE_CHANNELS {MONO = 1, STEREO = 2};
-	const int HARDWARE_CHANNELS_ = (int)STEREO;
+	const int HARDWARE_CHANNELS_ = 2;
 	const int FREQUENCY_ = 44100; 
 	const int CHUNK_SIZE_ = 2048;
 	const int MAX_CHUNKS_PLAYING_ = 5;
